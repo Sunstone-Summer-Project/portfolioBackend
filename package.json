@@ -5,8 +5,8 @@
   "main": "package.json",
   "license": "UNLICENSED",
   "scripts": {
-    "dev": "sanity dev",
-    "start": "sanity start",
+    "dev": "concurrently \"node index.js\" \"sanity dev\"",
+    "start": "concurrently \"node index.js\" \"sanity start\"",
     "build": "sanity build",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy"
@@ -25,7 +25,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sanity": "^3.52.2",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.1.8",
+    "concurrently": "^7.0.0"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^4.0.0",
