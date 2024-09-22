@@ -2,11 +2,10 @@
   "name": "portfolio",
   "private": true,
   "version": "1.0.0",
-  "main": "package.json",
   "license": "UNLICENSED",
   "scripts": {
-    "dev": "concurrently \"node index.js\" \"sanity dev\"",
-    "start": "concurrently \"node index.js\" \"sanity start\"",
+    "dev": "sanity dev",
+    "start": "sanity start",
     "build": "sanity build",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy"
@@ -16,17 +15,10 @@
   ],
   "dependencies": {
     "@sanity/vision": "^3.52.2",
-    "bcrypt": "^5.1.1",
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "mongoose": "^8.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sanity": "^3.52.2",
-    "styled-components": "^6.1.8",
-    "concurrently": "^7.0.0"
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^4.0.0",
