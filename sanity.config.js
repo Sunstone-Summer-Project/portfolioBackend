@@ -9,8 +9,8 @@ export default defineConfig({
   name: 'default',
   title: 'portfolio',
 
-  projectId: 'viv3sflq',
-  dataset: 'production',
+  projectId: process.env.PROJECT_ID,
+  dataset: process.env.DATASET,
 
   plugins: [structureTool(), visionTool()],
 
